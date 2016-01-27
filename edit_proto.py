@@ -63,8 +63,6 @@ if __name__ == '__main__':
     key = {'data_param' : 'batch_size'}
     new_value = 128
     
-    target = pu.Target(name, key, new_value)
-    
     count = edit_net_params(path_src, target, path_dst)
     
     print "Target edited %d times" % count
